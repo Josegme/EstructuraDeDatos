@@ -1,0 +1,166 @@
+Ejercicio1:
+
+Ingrese su nombre: 
+Ingrese su edad:
+Ingrese su fecha de nacimiento:  dia/mes/año
+ingrese monto de la matrícula: 
+
+===============================================================
+===========Universidad de Python - Inscripciones===============
+===============================================================
+
+DATOS DE INGRESO:
+Nombre completo: 
+Fecha de Nacimiento y edad: dia/mes/año (edad)
+Posee título?: true
+Matricula: $ 
+Cuota Mensual: 
+Arancel mensual materia 'Python I':
+Arancel Mensual materia 'Python I' con descuento: 
+
+Explicación del Código:
+Título Principal: Se imprime el título principal de la inscripción.
+Datos Personales: Se solicita al usuario ingresar su nombre, edad, fecha de nacimiento y el monto de la matrícula.
+Título Secundario: Se establece la variable posee_titulo_secundario como True directamente en el código.
+Cálculo de la Cuota: Se calcula la cuota como la suma del monto de la matrícula más $1000.
+Arancel de "Python I": Se define el arancel por cuatrimestre y se divide entre 4 para obtener el costo mensual.
+Descuento: Si el usuario indica que pagará en efectivo, se aplica un 15% de descuento sobre el costo mensual.
+Impresión Final: Se imprimen todos los datos solicitados, incluyendo la matrícula, el arancel mensual de la materia "Python I", y el arancel con descuento si corresponde.
+
+Ejercicio 2: 
+
+Cargar nota en dos Examenes y Obtener el Promedio. 
+Determinar si el alumno aprobó el último examen (nota mayor o igual a 7)
+en caso contrario informar que se desaprobó.
+
+Informar si el alumno:
+Mejoró su Desempeño: Si la nota del 2do Parcial es Mayor al Primero
+Mantuvo la Nota: Si ambas notas son Iguales
+Empeoró su desempeño: Si la nota del 1er Parcial es Mayor al Segundo
+
+Finalmente:
+Informar si el alumno Aprobó la materia (promedio mayor o igual a 7). 
+Deberá rendir Final (promedio mayor o igual a 4)
+Debera recursar
+Ejemplo:
+Ingrese la nota del Primer Parcial: 7
+Ingrese la nota del Segundo Parcial: 9
+
+El promedio de las notas es: 8.0
+Aprobó el segundo Parcial.
+Progreso del 1er al 2do parcial: Mejoró su Desempeño.
+Promocionó la Materia.
+
+Ejercicio 3:
+
+Organizar las Aulas de los alumnos del primer año.
+1 es Lunes y 6 es Sábado
+Aulas: 
+Programa que permita ingresar el numero de días entre 1 y 6. 
+Días pares: se cursa en A-300
+Días impares: se cursa en el A-315
+Descuento:
+Programa que otorgue descuento. 
+25% del valor de las cuotas:
+    cursar Turno Tarde
+    se inscriban en mas de 3 materias
+5% para el resto de los casos
+Imprimir el valor de la cuota con descuento segun el caso
+Estacionamiento:
+Asignar el costo diario de estacionamiento.
+300 a los alumnos que vengan en auto o monto
+50 si vienen en bicicleta.
+Ejemplo
+====Aulas====
+Ingrese el número del día: 1 (Lunes) a 6 (Sábado): 4
+Aula: A-300
+
+==============Descuento y Estacionamiento===
+Ingrese el Turno: Mañana, Tarde o Noche: Tarde
+Ingrese la Cantidad de Materias: 4
+El valor de la cuota es: 7500.0
+Ingrese el vehículo en el que ingresa: Auto, Moto o Bicicleta:
+Auto
+El costo de Estacionamiento para Auto es: 300
+
+4-b Carga de edades: se desea mejorar el sistema de carga de edades, validando que
+correspondan a mayores de edad. Desarrollar un programa que solicite edades válidas e
+imprima la edad ingresada y cuántas cargas erróneas se realizaron.
+Inicializamo el Contador
+    Utilizamos un bucle: Para que el usuario reitente y contamos los ingresos no válidos
+        solicitamos al usuario que ingrese la edad 
+            if else -> si es menor de 18 ->error y avisar al usuario
+                ->Si es mayor o igual a 18 cerrar el bucle-mostrar mensaje y mostrar cantidad de ingresos no válidos
+
+4-c Promedio de notas: cargar las notas de 5 alumnos y obtener el promedio (for).
+Nota: Al usar for probar cómo se podría plantear el ejercicio usando 1, 2 o 3 parámetros.
+inicializamos el contador
+    Promedio de notas
+        for notas in nota
+            solicita que ingrese las 5 notas
+                una vez subidas corta el bucle
+                    suma las notas -> saca el promedio
+                        imprime el promedio con un mensaje de la nota. 
+
+4-c BIS: Promedio de notas: cargar las 2 notas del primer y 
+segundo parcial de 5 alumnos y obtener el promedio (for). 
+Nota: Al usar for probar cómo se podría plantear el ejercicio usando 1, 2 o 3
+
+
+GIT - GIT HUB
+GIT REPOSITORIO LOCAL
+GIT HUB REPOSITORIO EN LA NUBE
+
+Para configurar mi Git local y repositorio GIT HUB
+
+git config --global user.name "José.GPI"
+
+git config --global user.name //no utilizar el correo para registrarnos en GITHUB 
+git config --globar user.mail "mi mail" //mismo correo electronico en github 
+
+git init //para comenzar a trabajar con git en nuestro LOCAL
+solo se realiza una vez cada vez que inicio un Proyecto nuevo. 
+Una vez que tenemos el INIT del Proyecto (dos pasos importantes)
+git add . //va a tomar los archivos de la carpeta - estamos avisando que vamos a mandar al repositorio
+
+====Enviar Commit======
+git commit -m "Mensaje sobre el Commit que estoy efectuando" 
+git log --oneline //para ver todos los cambios que estuvimos haciendo 
+
+cada vez que haga un cambio aparece una M en el fichero
+entonces realizo los pasos ADD > COMMIT > PUSH
+
+Para moverme de un Commit a otro commit (ver tutorial)
+
+en GIT-HUB //configurar para integrar mi local con el usuario github
+
+====CREAR RESPOSITORIO====
+miprimerrepo
+    readme
+        puplico/privado
+            https 
+                copiar comando y llevarlo a la terminal
+                tomar el segundo comando y llevarlo a la terminal
+                    git PUSH
+                        y ya deberia estar el archivo en el repositorio
+                            se puede clonar el repositorio desde CODE
+                        Cada vez que se haga una modificación se puede subir el repositorio LOCAL al REMOTO 
+
+                        una vez que realice las modificaciones y ADD > COMMIT ya puedo hacer el PUSH desde mi LOCAL
+
+                Comandos de Git
+Tenés una gran variedad de comandos de git
+
+commit
+branch
+checkout
+cherry-pick
+reset
+revert
+rebase
+merge      
+
+Cuando utilizamos For con 1, 2 o 3 parametros.
+1 parámetro (range(n)): Se usa para recorrer de 0 a n-1.
+2 parámetros (range(start, stop)): Se usa para recorrer de start a stop-1.
+3 parámetros (range(start, stop, step)): Añade un paso step para avanzar de forma diferente en cada iteración.
